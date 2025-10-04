@@ -42,3 +42,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.ready-bubble {
+width: 15rem;
+    height: 12rem;
+    top: calc(var(--spacing) * -17);
+    right: calc(var(--spacing) * -12);
+ 
+  position: absolute;
+}
