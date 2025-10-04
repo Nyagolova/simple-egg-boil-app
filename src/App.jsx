@@ -22,8 +22,9 @@ function App() {
         <div className="flex flex-col justify-center items-center h-screen">
           <img src={`/src/assets/${selectedEgg.toLowerCase()}.svg`} alt={selectedEgg} className="w-50 h-50 mb-4" />
           <h3 className="text-2xl font-bold">Start the timer to make a {selectedEgg} egg!</h3>
-           
-          <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded" onClick={() => {
+
+
+          <button className="mt-4 px-4 py-2  text-orange-500 rounded" onClick={() => {
             const img = document.querySelector(`img[alt="${selectedEgg}"]`);
 
             if (img) {
@@ -34,14 +35,14 @@ function App() {
             document.querySelector("button").style.display = "none";
             document.querySelector("h3").innerText = `Let's go!`;
            
-            //show timer to countdown from 5 minutes
+            //start timer and show progress
             let timeLeft = eggBoilTime * 60;
             const timer = setInterval(() => {
               if (timeLeft <= 0) {
                 clearInterval(timer);
                 document.querySelector("h3").innerText = `Your ${selectedEgg} egg is ready!`;
 
-                //remove bounce animation from image
+                //remove bounce animation from image when egg is ready
                 if (img) {
                   img.classList.remove("animate-bounce");
                 }
