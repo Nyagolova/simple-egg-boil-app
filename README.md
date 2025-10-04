@@ -1,6 +1,7 @@
 # Simple Egg Boil App
 
-A React + Vite + Tailwind app to select and time for soft, jammy, medium, or hard boiled eggs. 🥚🐣
+App to time the cooking of soft, jammy, medium, or hard boiled eggs. 🥚🐣
+
 Original Art with Figma ✨
 
 ## Features
