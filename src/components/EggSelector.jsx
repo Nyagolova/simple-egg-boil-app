@@ -13,7 +13,7 @@ const eggs = [
 
 const EggSelector = ({ onSelect }) => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center">
       <div className="grid grid-cols-2 gap-8">
         {eggs.map((egg) => (
           <EggCard
