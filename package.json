@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nyagolova.github.io/simple-egg-boil-app"
+  "homepage": "https://nyagolova.github.io/simple-egg-boil-app",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
