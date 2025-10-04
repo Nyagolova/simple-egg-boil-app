@@ -5,10 +5,10 @@ import mediumEgg from "../assets/medium.svg";
 import hardEgg from "../assets/hard.svg";
 
 const eggs = [
-  { type: "Soft", imgSrc: softEgg },
-  { type: "Jammy", imgSrc: jammyEgg },
-  { type: "Medium", imgSrc: mediumEgg },
-  { type: "Hard", imgSrc: hardEgg },
+  { type: "Soft", imgSrc: softEgg, minBoilTime: 3 },
+  { type: "Jammy", imgSrc: jammyEgg, minBoilTime: 4 },
+  { type: "Medium", imgSrc: mediumEgg, minBoilTime: 5 },
+  { type: "Hard", imgSrc: hardEgg, minBoilTime: 6 },
 ];
 
 const EggSelector = ({ onSelect }) => {
@@ -20,7 +20,8 @@ const EggSelector = ({ onSelect }) => {
             key={egg.type}
             type={egg.type}
             imgSrc={egg.imgSrc}
-            onClick={() => onSelect(egg.type)}
+            minBoilTime={egg.minBoilTime}
+            onClick={() => onSelect(egg.type, egg.minBoilTime)}
           />
         ))}
       </div>
