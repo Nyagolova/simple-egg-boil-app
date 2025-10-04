@@ -15,4 +15,4 @@ Original Art with Figma ✨
 - Tailwind CSS
 - Figma
 
-https://nyagolova.github.io/simple-egg-boil-app/
+https://nyagolova.github.io/simple-egg-boil-app/ - in progress
